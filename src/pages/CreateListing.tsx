@@ -88,7 +88,7 @@ const CreateListing: React.FC = () => {
 
     if (geolocationEnabled) {
       const response = await fetch(
-        `http://api.positionstack.com/v1/forward?access_key=${process.env.REACT_APP_GEOCODE_API_KEY}&query=${location}`
+        `https://api.positionstack.com/v1/forward?access_key=${process.env.REACT_APP_GEOCODE_API_KEY}&query=${location}`
       );
 
       const data = await response.json();
